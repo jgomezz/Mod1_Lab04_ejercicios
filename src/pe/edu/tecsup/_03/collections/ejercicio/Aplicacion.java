@@ -17,7 +17,7 @@ public class Aplicacion {
 		System.out.println(diasSemanas);
 		System.out.println(diasSemanas.size());
 		
-		
+		// _diasSemanas, variable en modo lectura : Mutable
 		Collection _diasSemanas = new ArrayList<String>(diasSemanas);
 		
 		_diasSemanas.remove("Feriado");
