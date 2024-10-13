@@ -30,7 +30,7 @@ public class Aplicacion {
 			System.out.println("Toyota no esta");
 		}
 
-		Collections.sort(autos); // Ordenados en forma alfabetica.
+		Collections.sort(autos); // Ordena por marca y modelo
 
 		System.out.println(autos);
 		
