@@ -2,7 +2,8 @@ package pe.edu.tecsup._04.collections.list.ejercicios;
 
 import java.util.Objects;
 
-public class Auto {
+
+public class Auto implements Comparable<Auto>{
 
 	private String modelo;
 	
@@ -34,6 +35,19 @@ public class Auto {
 			return false;
 		Auto other = (Auto) obj;
 		return Objects.equals(marca, other.marca) && Objects.equals(modelo, other.modelo);
+	}
+
+	@Override
+	public int compareTo(Auto a) {
+		
+		int compararMarca =  marca.compareTo(a.marca);
+		int compararModelo =  modelo.compareTo(a.modelo);
+
+		if (compararMarca == 0)
+			return compararModelo;
+		
+		return compararMarca;
+		 
 	}
 
 	

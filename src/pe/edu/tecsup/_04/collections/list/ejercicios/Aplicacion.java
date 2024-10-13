@@ -1,6 +1,7 @@
 package pe.edu.tecsup._04.collections.list.ejercicios;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Aplicacion {
@@ -15,6 +16,7 @@ public class Aplicacion {
 		autos.add( new Auto("X001", "Toyota") );
 		autos.add( new Auto("X002", "Nissan") );
 		autos.add( new Auto("X003", "Pegaut") );
+		autos.add( new Auto("Y003", "Pegaut") );
 		
 		// For each
 		for (Auto auto : autos) {
@@ -28,6 +30,10 @@ public class Aplicacion {
 			System.out.println("Toyota no esta");
 		}
 
+		Collections.sort(autos); // Ordenados en forma alfabetica.
+
+		System.out.println(autos);
+		
 	}
 
 }
